@@ -2,37 +2,184 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* general background - start */
+html{
+  background: linear-gradient(to bottom right ,  rgb(166, 166, 241) , rgb(146, 146, 233), rgb(126, 175, 240), rgb(122, 122, 233), rgb(138, 138, 245)) no-repeat center center fixed;
+  background-size: cover;
+}
+/* general background - start */
+
+button{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  /* background-color: rgb(80, 75, 75); */
+  box-shadow: inset 0px -5px 7px rgb(126, 120, 120);
+  /* box-shadow: inset 0px -4px 4px black */
+}
+#buttonClicked{
+  box-shadow: inset 0px -4px 4px white;
+  /* background-color: yellow; */
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{
+  text-decoration-line: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.layout{
+  margin-top: 300px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  justify-content: center;
+  margin: auto;
+  margin-top: 200px;
+  max-width: 600px;
+  
+}
+
+/* Picture and private information section - start  ( all inside the .layout )*/
+.pictureSection{
+  flex: 2 1 ;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-height: 180px;
+}
+#myPicture{
+  /* animation-play-state: paused; */
+  flex: 1 0 10em;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  /* box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white  inset; */  
+  margin-top: 30px;
+  /* transition: opacity 2s; */
+}
+#myPicture:hover{
+  scale: 1.1;
+  border: 3px double black
 }
 
-.App-link {
-  color: #61dafb;
+.animatePicture{
+  animation: Me 1s forwards;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+@keyframes Me{
+  from{opacity: 1;}
+  to{
+    opacity: 0;
+    /* visibility: collapse; */
   }
 }
+
+#privateInfo{
+  flex: 1 1;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+#details{
+  flex: 1 1 ;
+  width: 180px;
+  
+}
+#leftSvg{
+  flex: 1 1 1;
+}
+#rightSvg{
+  flex: 1 1 1;
+}
+
+/* Picture and private information section - end  */
+
+
+/* button tabs - start */
+#leftSideTabs{
+  flex: 1 1 10%;
+}
+#rightSideTabs{
+  flex: 1 1 10%;
+}
+/* button tabs - end */
+
+.generalSkills{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  flex-flow: nowrap;
+  width: 800px;
+  height: 30px;
+  font-size: 1.1em;
+}
+
+/* Work Experience component -start*/
+
+.years{
+  font-weight: 600;
+}
+.jobTitle{
+  font-style: italic;
+  font-weight: bold;
+}
+/* Work Experience component -end*/
+
+/* #workExperienceBtn{
+  animation: pump 2s infinite;
+  display: inline-block;
+  position: relative;
+} */
+
+
+
+#softwareExperienceBtn{
+  animation: pump 2s infinite;
+  display: inline-block;
+  position: relative;
+}
+@keyframes pump {
+  0%{scale: 1}
+  50%{scale: 1.1}
+}
+
+/* SoftwareExperience component - start*/
+#reactInfo{
+  position: absolute;
+  margin: auto;
+  /* background-color: green; */
+  font-weight: bold ;
+  animation: spining 1s infinite;
+  animation-timing-function: linear; 
+}
+
+#reactInfo tooltiptext{
+  background-color: green;
+}
+@keyframes spining {
+    from {
+      transform:rotate(0deg);
+    }
+
+    to {
+      transform:rotate(360deg);
+    }
+    
+    0%{
+      scale: 1;
+    }
+    50%{
+      scale: 1.4;
+    }
+}
+
+#projectsExample, p{
+  line-height: 3px;
+}
+
+/* SoftwareExperience component - end*/
