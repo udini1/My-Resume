@@ -6,6 +6,7 @@
 html{
   background: linear-gradient(to bottom right ,  rgb(166, 166, 241) , rgb(146, 146, 233), rgb(126, 175, 240), rgb(122, 122, 233), rgb(138, 138, 245)) no-repeat center center fixed;
   background-size: cover;
+  height: 600px;
 }
 /* general background - start */
 
@@ -60,8 +61,10 @@ h3{
   /* transition: opacity 2s; */
 }
 #myPicture:hover{
-  scale: 1.1;
-  border: 3px double black
+  transform: scale(1.1);
+  /* scale: 1.1; */
+  border: 3px double black;
+  
 }
 
 .animatePicture{
@@ -139,10 +142,10 @@ h3{
 
 
 #softwareExperienceBtn{
-  animation: pump 2s infinite;
-  display: inline-block;
-  position: relative;
+  /* -webkit-animation: pump 1s infinite; */
+  animation: pump 1s infinite;
 }
+
 @keyframes pump {
   0%{scale: 1}
   50%{scale: 1.1}
@@ -183,3 +186,18 @@ h3{
 }
 
 /* SoftwareExperience component - end*/
+
+/* ToastMessage component - start */
+
+#toastMSG{
+  margin: auto;
+  /* border: solid 4px white; */
+  color: wheat;
+  background-color: black;
+  width: 250px;
+  bottom: 20px;
+  position: absolute;
+  left: 250px;
+}
+
+/* ToastMessage component - end */

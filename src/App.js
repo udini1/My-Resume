@@ -9,10 +9,13 @@ import SoftwareExperience from './components/SoftwareExperience';
 import MilitaryService from './components/MilitaryService';
 import Languages from './components/Languages';
 import AboutMe from './components/AboutMe';
+import ToastMessage from './components/ToastMessage';
+
 function App() {
   return (
     <div className="App">
       <Router history={history}>
+
         <Switch>
 
           <Route exact path="/" component={()=>{
@@ -52,7 +55,11 @@ function App() {
           />
           
         </Switch>
+
+        <ToastMessage/>
       </Router>
+
+      
     </div>
   );
 }

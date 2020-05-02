@@ -49,7 +49,7 @@ export default class SoftwareExperience extends Component {
                     <ul style={{listStyleType: 'none',marginRight: '30px'}}>
                         <li>Photoshop</li>
                         <li>illustrator</li>
-                        <li>indesign</li>
+                        <li>InDesign</li>
                         
                     </ul>
                 </div>
