@@ -18,9 +18,10 @@ export default class ToastMessage extends Component {
     }
     
         return (
-            <div>
+            <div id="toastMSG">
                 
-                <div id="toastMSG" style={{display: this.state.message, fontWeight: "bold" }}>Use FireFox for best experience</div>
+                <div style={{display: this.state.message, fontWeight: "bold" }}>Use FireFox for best experience</div>
+                {/* <div>Use FireFox for best experience</div> */}
 
             </div>
         )

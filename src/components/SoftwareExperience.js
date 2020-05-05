@@ -53,6 +53,7 @@ export default class SoftwareExperience extends Component {
                         
                     </ul>
                 </div>
+                
             <Link to="/" >Go back</Link>
             </div>
         )

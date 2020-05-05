@@ -56,7 +56,10 @@ function App() {
           
         </Switch>
 
-        <ToastMessage/>
+{/* Toast Message for when chrome have trouble running some css */}
+        {/* <ToastMessage/> */}
+      
+
       </Router>
 
       

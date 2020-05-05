@@ -123,17 +123,18 @@ export default class MainPage extends Component {
                 <div className="layout">
                     {/* The HTML of the left side Tabs/Buttons  */}
                     <div id="leftSideTabs">
-                        <div>
-                        <button id="workExperienceBtn" onClick={this.goToWorkExperience}>Work Experience</button><br/>
-                        </div>
-                        <button id="softwareExperienceBtn" style={{marginRight: '60px'}} onClick={this.goToSoftwareExperience}>Software Experience</button><br/>
+                        
+                        <button id="workExperienceBtn" onClick={this.goToWorkExperience}>Work Experience</button>
+                        <br/>
+                        <button id="softwareExperienceBtn" style={{marginRight: '60px'}} onClick={this.goToSoftwareExperience}>Software Experience</button>
+                        <br/>
                         <button onClick={this.goToEducation}>Education</button>
                     </div>
 
                     {/* The HTML of the middle of the page - where lays the picture and info */}
                     <div className="pictureSection">
                         <div> 
-                            <img id="myPicture" style={{display: this.state.hidePicture}} onClick={this.runTransition} src={MyPic1} alt="my picture here"/>
+                            <img id="myPicture" style={{display: this.state.hidePicture}} onClick={this.runTransition} src={MyPic1} alt="my face should be here"/>
                         </div>
 
                         <div id="privateInfo" style={{display: this.state.showPrivateInfo}} >
@@ -183,7 +184,6 @@ export default class MainPage extends Component {
                             <p style={{display: this.state.showGeneralSkills.fifthObj, marginRight: '20px', fontWeight: 'bold'}}>Team player</p>
                         </div>
                     </div>
-
            
             <br/>
             

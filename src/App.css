@@ -141,14 +141,17 @@ h3{
 
 
 
-#softwareExperienceBtn{
-  /* -webkit-animation: pump 1s infinite; */
-  animation: pump 1s infinite;
+#softwareExperienceBtn{  
+  animation:pump 1s infinite;
 }
 
 @keyframes pump {
-  0%{scale: 1}
-  50%{scale: 1.1}
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
 }
 
 /* SoftwareExperience component - start*/
@@ -191,13 +194,12 @@ h3{
 
 #toastMSG{
   margin: auto;
-  /* border: solid 4px white; */
   color: wheat;
   background-color: black;
   width: 250px;
-  bottom: 20px;
-  position: absolute;
-  left: 250px;
+  /* bottom: 20px; */
+  /* left: 250px; */
+  
 }
 
 /* ToastMessage component - end */
