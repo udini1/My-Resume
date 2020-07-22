@@ -6,7 +6,7 @@ export default class SoftwareExperience extends Component {
     state={
         reactJsInfo : '- Currently practicing on my own project in React',
         showReactJsInfo : false,
-        javaScriptInfo: ' - Currently practicing JQuery while strengthening skills in vanilla JS',
+        javaScriptInfo: ' - Currently practicing skills in vanilla JS',
         showJsInfo: false
         
     }
