@@ -31,9 +31,9 @@ export default class SoftwareExperience extends Component {
                     <ul style={{listStyleType: 'none',marginRight: '30px'}}>
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>JavaScript &nbsp;<span id="reactInfo" title='Click for more info' onClick={()=>this.setState({showJsInfo: !this.state.showJsInfo})}>*</span></li>
+                        <li>JavaScript &nbsp;<span id="info" title='Click for more info' onClick={()=>this.setState({showJsInfo: !this.state.showJsInfo})}>*</span></li>
                         <span style={{display: this.state.showJsInfo === false ? 'none' : 'block' , fontSize: '14px'}}>{this.state.javaScriptInfo}</span>                        
-                        <li>React JS  &nbsp;<span id="reactInfo" title='Click for more info' onClick={()=>this.setState({showReactJsInfo: !this.state.showReactJsInfo})}>*</span></li>
+                        <li>React JS  &nbsp;<span id="info" title='Click for more info' onClick={()=>this.setState({showReactJsInfo: !this.state.showReactJsInfo})}>*</span></li>
                         <span style={{display: this.state.showReactJsInfo === false ? 'none' : 'block' , fontSize: '14px'}}>{this.state.reactJsInfo}</span>                       
                     </ul>
                     <div id="projectsExamples">
