@@ -40,6 +40,7 @@ export default class SoftwareExperience extends Component {
                         <h5>Projects</h5>
                         <p>Sudoku - <a href="https://sudoku-project.netlify.app/">Click Here</a></p>
                         <p>Smart House - <a href="https://smart-house.netlify.app/">Click Here</a></p>
+                        <p>Test Zone - <a href="https://mytestzone.netlify.app/">Click Here</a></p>
                     </div>
                 </div>
                 <br/>
